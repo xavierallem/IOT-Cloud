@@ -1,9 +1,9 @@
-# Module 4 - Master the skills - Interfaces Programming 
+# Module 4 - Master the skills - Interfaces Programming & Cloud
 
 ## What will I be learning in this Module?
 You will be learning 
 1. How to program microprocessor interfaces 
-2. Shunya Interfaces library 
+2. Various protocols to send data to the Cloud.
 
 ## How to complete this module?
 
