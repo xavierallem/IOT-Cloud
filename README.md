@@ -1,19 +1,12 @@
-# Module 4 - Master the skills - Azure Cloud IoT Platform
+# Module 4 - Introduction to Cloud Services & Cloud programming 
 
 ## What will you be learning in this Module?
 You will be learning 
-1. How to register a device with Azure IoT Hub
-2. Set up communication between the device and cloud
+1. Cloud services used in the Industry for IoT
+2. Setting up communication between the IoT device and cloud
 
-## How to complete the Module?
-Learning a skill happes in 3 stages Understand, Summarize & Practice (USP). This applies to the module as well.
+#### Completion and the Navigation of the Module is exactly same as the Orientation module, Please see this [link](https://gitlab.iotiot.in/newbies/orientation#how-to-complete-each-module-including-orientation-the-skilling-process) in-case you need a refresher on the Navigation of the module.
 
-| Process Stage | Description                                                                        | Links      |
-|---------------|------------------------------------------------------------------------------------|------------|
-| Understand    | Read course material and try to understand topics covered in the Module.           | [Wiki](https://gitlab.iotiot.in/newbies/iot-internship-feb-20/module4/wikis/azure-iot)   |
-| Summarize (Assignment)     | Reinforce critical parts of the subject by writing them down in concise Summaries. | [Issues](https://gitlab.iotiot.in/newbies/iot-internship-feb-20/module4/issues) |
-| Practice  (Assignment)    | Practice skills, to make your learning. This where your brain learns the most.     | [Issues](https://gitlab.iotiot.in/newbies/iot-internship-feb-20/module4/issues) |
+## Have Questions about the Process ?
 
-Last Step is to **Submit** your Summary and Practice Assignment in the [Issue](https://gitlab.iotiot.in/newbies/iot-internship-feb-20/module4/issues)
-## FAQ 
-Have questions about the module? Check out our [FAQ section](FAQ.md)
+- See our [FAQ section](FAQ.md)
