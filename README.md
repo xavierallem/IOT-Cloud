@@ -1,4 +1,4 @@
-# Module 4 - Introduction to Cloud Services & Cloud programming 
+# Module 4 - Introduction to Cloud proctocols
 
 ## What will you be learning in this Module?
 You will be learning 
