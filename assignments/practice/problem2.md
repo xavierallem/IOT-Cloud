@@ -1,35 +1,46 @@
 # Problem 2
 
-### Goal: Implement communication to Google IoT cloud using the google IoT embedded C SDK
+### Goal : Implement a full-duplex communication using a CoAP protocol. 
 
-### Expected outcome
-Write code using the Google IoT Cloud device SDK for embedded C to achieve these goals. 
+### Description
+You guys have to implement 
+- CoAP server 
+- CoAP client 
 
-1. User should be able to Set Authentication for Google IoT device (i.e certificate type and certificate location) via cmdline
-2. User should be able to Set MQTT Endpoint URL & Port Number via cmdline. 
-3. Send messages to user-chosen MQTT topics (Publish)
-4. Choose to read messages from user-selected MQTT topics (Subscribe) 
-5. Read messages from selected MQTT Topics in real-time. 
-6. Simplified document for Compiling the SDK and linking it with your program
+#### Implementation goals for the server 
+1. Read these values from your laptop 
+    * RAM
+    * CPU clock Speed 
+    * CPU temperature
+2. And add the above parameters as resource in the server.
+3. Update the data for these resources every 100 ms. 
 
-## Steps to complete
+The goal is to make a coap server that has RAM, CPU clock speed and CPU temperature as data points 
+which are exposed to any coap client.
 
-1. Study the [Google IoT Cloud device SDK for embedded C](https://github.com/GoogleCloudPlatform/iot-device-sdk-embedded-c) and document the API's.
-2. Write code using the Google IoT Cloud device SDK for embedded C to [given goals](#expected-outcome).
+#### Implementation goals for the client 
+1. Read these values from the above coap server
+    * RAM
+    * CPU clock Speed 
+    * CPU temperature
+2. And print the values on `stdout`.
+3. Print the data for these resources every 50 ms. 
 
-#### Testing Note:
-Unless you have the Google IoT Account(requires Credit Card) for testing the code, 
-I suggest that you do not test the working of the code, rather test the code for compilation. 
+The goal is to make a coap client that can read RAM, CPU clock speed and CPU temperature 
+from the coap server.
 
-If you can find any other means to test the code then you are welcome to suggest 
-the testing method in the Issues.
+
+- You must use given CoAP Client libraries to make your CoAP client.
+    - C library - https://github.com/obgm/libcoap
+
+- See examples to get a quick understanding of the Client and server code -https://github.com/obgm/libcoap-minimal
+
+- For this you may have to install libcoap library on your laptop.
+    - Installation of libcoap - https://libcoap.net/install.html 
+    - libcoap documentation - https://libcoap.net/
 
 ### Acceptance Criteria 
-Check if your submission fulfills the criteria before submission
-
-1. All the above set Goals must be achieved for the completion of the Task
-2. The code must be written in embedded C and not it the any other language.
-3. The code must be documented using the C Coding style. 
-4. The code must be tested for compilation on Shunya OS docker container. 
-
-(Use this document for [Shunya OS docker](https://gitlab.iotiot.in/snippets/52))
+This is the criteria to accept the assignment.
+- **Must** have documentation for setting up CoAP server and CoAP Client.
+- **Must** follow the Coding Standards.
+- You must show the proof of the communication working, here use your own creativity to show proof, it can be images, videos, etc... 
