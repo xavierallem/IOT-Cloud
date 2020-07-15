@@ -1,24 +1,52 @@
 # Problem 1
 
-### Goal : Implement a full-duplex communication using a AMQP protocol. 
+### Goal : Send data read form the device (in module 3) to AWS and InfluxDB and write a JSON file parser for parsing User settings 
 
-### Description
-You guys have to implement 
-- AMQP broker 
-- AMQP client 
+#### Outcomes 
+1. Code which parses the JSON file which contains settings defined by the user
 
-- You must use AMQP Client libraries to make your AMQP client.
-    - C library - https://github.com/alanxz/rabbitmq-c
+Sample JSON file:
 
-- You **must** to [RabbitMQ](https://www.rabbitmq.com/) broker/server for the AMQP. 
-- For this you may have to install Rabbit MQ server on your laptop.
-    - Installation of Rabbit MQ (docker install recommended) - https://www.rabbitmq.com/download.html 
-    - Rabbit MQ documentation - https://www.rabbitmq.com/admin-guide.html
+```json
+{
+    "device_attributes": {
+        "name": "smart meter",
+        "serial": "123456789",
+        "debug_log": "/var/meter.log"
+    },
+    "settings": {
+        "influxdb": {
+            "db_url": "http:148.251.91.253:9600",
+            "db_name": "electricMeter"
+        },
+        "aws": {
+            "hostURL": "AWS",
+            "port": "8886",
+            "certDir": "/home/shunya/.cert/aws/",
+            "rootCA": "rootCA.cert",
+            "certName": "client.cert",
+            "privKey": "client.key",
+            "clientID": "smartMeter",
+            "QOS": 0
+        },
+        "modbus": {
+            "device": "/dev/ttyAMA0",
+            "baud": "9600"
+        }
+    }
+}
+```
+
+2. Take this settings and then send the data read from the device to AWS and InfluxDB
+
+
+### Steps to complete
+
+- Improve on the code that you have written in the previous modules. 
+- Write code for parsing JSON and putting it to the settings structure.
+- Write code for sending the data to AWS and InfluxDB
 
 ### Acceptance Criteria 
 This is the criteria to accept the assignment.
-- **Must** have documentation for setting up AMQP broker and AMQP Client.
 - **Must** follow the Coding Standards.
-- Broker **MUST** be Rabbit MQ.
-- You must show the proof of the communication working, here I am allowing you to use your own creativity to show proof, it can be images, videos, etc... 
-- Documentation should be provided to install Rabbit-MQ server and to run the AMQP client.
+- Documentation should be provided for the code.

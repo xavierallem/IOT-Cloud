@@ -1,0 +1,27 @@
+{
+    "device_attributes": {
+        "name": "smart meter",
+        "serial": "123456789",
+        "debug_log": "/var/meter.log"
+    },
+    "settings": {
+        "influxdb": {
+            "db_url": "http:148.251.91.253:9600",
+            "db_name": "electricMeter"
+        },
+        "aws": {
+            "hostURL": "AWS",
+            "port": "8886",
+            "certDir": "/home/shunya/.cert/aws/",
+            "rootCA": "rootCA.cert",
+            "certName": "client.cert",
+            "privKey": "client.key",
+            "clientID": "smartMeter",
+            "QOS": 0
+        },
+        "modbus": {
+            "device": "/dev/ttyAMA0",
+            "baud": "9600"
+        }
+    }
+}
