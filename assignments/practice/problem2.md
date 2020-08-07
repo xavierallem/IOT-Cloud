@@ -1,4 +1,4 @@
-# Problem 4
+# Problem 2
 
 ### Purpose : Write code for reading data from ADC connected to RPI using Shunya Interfaces API's
 
