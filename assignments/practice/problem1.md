@@ -1,50 +1,17 @@
 # Problem 1
 
-### Goal : Send data read form the device (in module 3) to AWS and InfluxDB and write a JSON file parser for parsing User settings 
+### Goal : Send data from device to Thinger.io platform using MQTT
 
 #### Outcomes 
-1. Code which parses the JSON file which contains settings defined by the user
-
-Sample JSON file:
-
-```json
-{
-    "device_attributes": {
-        "name": "smart meter",
-        "serial": "123456789",
-        "debug_log": "/var/meter.log"
-    },
-    "settings": {
-        "influxdb": {
-            "db_url": "http:148.251.91.253:9600",
-            "db_name": "electricMeter"
-        },
-        "aws": {
-            "hostURL": "AWS",
-            "port": "8886",
-            "certDir": "/home/shunya/.cert/aws/",
-            "rootCA": "rootCA.cert",
-            "certName": "client.cert",
-            "privKey": "client.key",
-            "clientID": "smartMeter",
-            "QOS": 0
-        },
-        "modbus": {
-            "device": "/dev/ttyAMA0",
-            "baud": "9600"
-        }
-    }
-}
-```
-
-2. Take this settings and then send the data read from the device to AWS and InfluxDB
+Code which sends data to Thinger.io platform using MQTT protocol and enables these things 
+1. Store data into Buckets
+2. Show data to Dashboards
 
 
 ### Steps to complete
 
-- Improve on the code that you have written in the previous modules. 
-- Write code for parsing JSON and putting it to the settings structure.
-- Write code for sending the data to AWS and InfluxDB
+- Go through the documentation for the [Thinger.io](https://docs.thinger.io/quick-sart/devices/mqtt)
+- Write code for Thinger.iot platform using Shunya Interfaces MQTT API.
 
 ### Acceptance Criteria 
 This is the criteria to accept the assignment.
