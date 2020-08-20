@@ -45,20 +45,3 @@ void function_1 (void)
         /*Make sure you comment every line */
 	
 }
-
-/** 
- *  @brief Description on main
- *  
- *  Full description of the function
- *
- *  @return List all Function returns 
- */
-
-int main (void)
-{
-
-        /*Make sure you comment every line */
-        return 0;
-        
-}
-
