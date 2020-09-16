@@ -1,28 +1,31 @@
 # Problem 2
 
-### Purpose : Write code for reading data from ADC connected to RPI using Shunya Interfaces API's
+### Purpose : Send data from embedded device to n8n platform using webhooks (HTTP requests)
 
-## Outcomes 
-C code that 
-1. Reads the analog data from the ADC 
-1. Sends it to InfluxDB
-1. Stored in a JSON file with UNIX Timestamp
+Write code using the libcurl library to send events (data) from embedded device to n8n platform using webhooks (HTTP requests)
 
-### Steps for completion
-1. Write code for reading data from the ADC
-   - Use Shunya Interfaces simple API for reading data form the ADC
-1. Write code to Store the data into Time series Database in InfluxDB.
-    - For InfluxDB assume its URL to be `http://148.251.91.245` and port `8600`
-1. Write code to store data into a JSON file.
-1. Write Shunya `config.json` file.
+#### Outcomes 
+1. C/CPP `n8n.cxx` code which contains functions that can be used to send data to the n8n platform.
+2. C/CPP `n8n_examples.cxx` code which contains main function that uses the functions from the `iftt.cxx` file
+3. Document on how to use the functions from `n8n.cxx` file.
 
+
+### Steps to complete
+
+1. Go through the reading material for sending data through Webhooks to IFTT. 
+    - https://thepihut.com/blogs/raspberry-pi-tutorials/using-ifttt-with-the-raspberry-pi
+
+   (understand the logic of sending data to the IFTT platform)
+
+**Note**: Although the above link is for IFTT platform but the same logic will also apply for n8n platform. Please understand the logic and apply it to n8n platform as well
+
+2. Go through the reading matrial for the libcurl library 
+    - libcurl API - https://curl.haxx.se/libcurl/c/
+    - Various example codes using libcurl - https://curl.haxx.se/libcurl/c/example.html
+
+3. Write code to send event data as JSON in http request. 
 
 ### Acceptance Criteria 
 This is the criteria to accept the assignment.
-- The code must be divided into functions 
-- **Must** have documentation for using the program.
-- Code **Must** follow the Coding Standards.
-- Code must be in C.
-- Code must be compiled in the Shunya OS docker container.
-
-#### Note: Documentation of the whole program is a must criteria for the completion of the Assignment.
+- **Must** follow the Coding Standards.
+- The code **Must** use the cURL library. 
