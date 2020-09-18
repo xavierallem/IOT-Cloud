@@ -11,7 +11,7 @@ The developer creates the API on the server and allows the client to talk to it.
 
 # The Anatomy of REST
 
-- [**The Endpoint**]()
+- [**The Endpoint**](#the-endpoint)
 - [**The Method**]()
 - [**The Headers**]()
 - [**The Data**]()
