@@ -12,7 +12,7 @@ MQTT allows you to send commands to control outputs, read and publish data from 
 - [**Publish/Subscribe**](#publishsubscribe)
 - [**Messages**](#messages)
 - [**Topics**](#topics)
-- [**Broker**]()
+- [**Broker**](#broker)
 
 
 ### Publish/Subscribe
@@ -40,4 +40,16 @@ Here’s an example on how you would create a topic for a lamp in your home offi
 **Note**: - topics are case-sensitive.
 
 ![lo](assignments/Assets/publish-subscribe-example.png)
+
+
+### Broker
+
+The broker is primarily responsible for receiving all messages, filtering the messages,
+decide who is interested in them and then publishing the message to all subscribed clients.
+
+![lo](assignments/Assets/mqtt_broker.png)
+
+There are several brokers you can use such as  [Mosquitto broker ](https://mosquitto.org/).
+
+
 
