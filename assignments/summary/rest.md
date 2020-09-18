@@ -42,3 +42,13 @@ The **Method** is the type of request you send to the server. You can choose fro
 - **POST**: - This request is used to create a new resource on a server. If you perform a `POST` request, the server creates a new entry in the database and tells you whether the creation is successful.
 - **PUT**: - These two requests are used to update a resource on a server. If you perform a `PUT`  request, the server updates an entry in the database and tells you whether the update is successful
 - **DELET**: - This request is used to delete a resource from a server. If you perform a `DELETE` request, the server deletes an entry in the database and tells you whether the deletion is successful.
+
+_Example_ for GET & PUT
+```
+GET /users/username/repo
+```
+
+```
+POST /users/repos
+```
+
