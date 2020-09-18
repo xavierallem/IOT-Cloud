@@ -14,7 +14,7 @@ The developer creates the API on the server and allows the client to talk to it.
 - [**The Endpoint**](#the-endpoint)
 - [**The Method**](#the-method)
 - [**The Headers**](#the-headers)
-- [**The Data**]()
+- [**The Data**](#the-data)
 
 
 ## The Endpoint
@@ -67,6 +67,24 @@ You can send HTTP headers with curl through the -H or --header option. To send t
 
 ```
 curl -H "Content-Type: application/json" https://api.github.com
+```
+
+## The Data
+
+![lo](assignments/Assets/api_diagram_2FA_Validate.png)
+
+
+The **Data** (sometimes called “body” or “message”) contains information you want to be sent to the server. This option is only used with 'POST', 'PUT', 'PATCH' or 'DELETE' requests.
+To send data through 'cURL', you can use the '-d' or '--data' option:
+
+```
+curl -X POST <URL> -d property1=value1
+```
+To send multiple data fields, you can create multiple -d options:
+
+```
+curl -X POST <URL> -d property1=value1 -d property2=value2
+
 ```
 
 
