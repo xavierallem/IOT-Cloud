@@ -7,7 +7,7 @@ MQTT allows you to send commands to control outputs, read and publish data from 
 
 ![lo](assignments/Assets/publish-and-subscribe.jpg)
 
-## MQTT Basic Concepts
+# MQTT Basic Concepts
 
 - [**Publish/Subscribe**](#publishsubscribe)
 - [**Messages**](#messages)
@@ -15,7 +15,7 @@ MQTT allows you to send commands to control outputs, read and publish data from 
 - [**Broker**](#broker)
 
 
-### Publish/Subscribe
+## Publish/Subscribe
 
 The first concept is the publish and subscribe system. In a publish and subscribe system, a device can publish a message on a topic,
 or it can be subscribed to a particular topic to receive messages
@@ -23,13 +23,13 @@ or it can be subscribed to a particular topic to receive messages
 ![lo](assignments/Assets/publish-subscribe.png)
 
 
-### Messages
+## Messages
 
 Messages are the information that you want to exchange between your devices. Whether it’s a command or data.
 
 ![lo](assignments/Assets/Structure-of-an-MQTT-message.png)
 
-### Topics
+## Topics
 
 Topics are the way you register interest for incoming messages or how you specify where you want to publish the message.
 Topics are represented with strings separated by a forward slash. Each forward slash indicates a topic level. 
@@ -42,7 +42,7 @@ Here’s an example on how you would create a topic for a lamp in your home offi
 ![lo](assignments/Assets/publish-subscribe-example.png)
 
 
-### Broker
+## Broker
 
 The broker is primarily responsible for receiving all messages, filtering the messages,
 decide who is interested in them and then publishing the message to all subscribed clients.
