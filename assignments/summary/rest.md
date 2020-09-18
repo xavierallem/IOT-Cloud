@@ -13,7 +13,7 @@ The developer creates the API on the server and allows the client to talk to it.
 
 - [**The Endpoint**](#the-endpoint)
 - [**The Method**](#the-method)
-- [**The Headers**]()
+- [**The Headers**](#the-headers)
 - [**The Data**]()
 
 
