@@ -51,4 +51,23 @@ GET /users/username/repo
 ```
 POST /users/repos
 ```
+## The Headers
+
+![l](assignments/Assets/requestpacket.jpg)
+
+Headers are used to provide information to both the client and server. It can be used for many purposes, such as authentication and providing information about the body content.
+**HTTP Headers are property-value** pairs that are separated by a colon. The example below shows a header that tells the server to expect JSON content.
+
+```
+"Content-Type: application/json". Missing the opening ".
+
+```
+
+You can send HTTP headers with curl through the -H or --header option. To send the above header to Github’s API, you use this command:
+
+```
+curl -H "Content-Type: application/json" https://api.github.com
+```
+
+
 
