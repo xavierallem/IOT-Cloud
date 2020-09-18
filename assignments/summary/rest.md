@@ -74,8 +74,8 @@ curl -H "Content-Type: application/json" https://api.github.com
 ![lo](assignments/Assets/api_diagram_2FA_Validate.png)
 
 
-The **Data** (sometimes called “body” or “message”) contains information you want to be sent to the server. This option is only used with 'POST', 'PUT', 'PATCH' or 'DELETE' requests.
-To send data through 'cURL', you can use the '-d' or '--data' option:
+The **Data** (sometimes called “body” or “message”) contains information you want to be sent to the server. This option is only used with `POST`, `PUT`, `PATCH` or `DELETE` requests.
+To send data through `cURL`, you can use the `-d` or `--data` option:
 
 ```
 curl -X POST <URL> -d property1=value1
