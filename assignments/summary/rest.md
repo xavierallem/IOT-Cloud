@@ -80,7 +80,7 @@ To send data through `cURL`, you can use the `-d` or `--data` option:
 ```
 curl -X POST <URL> -d property1=value1
 ```
-To send multiple data fields, you can create multiple -d options:
+To send multiple data fields, you can create multiple `-d` options:
 
 ```
 curl -X POST <URL> -d property1=value1 -d property2=value2
