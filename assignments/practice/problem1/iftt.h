@@ -3,7 +3,7 @@
 
 
 /*Linking*/
-extern void POST_IFTTT (const char *ptr,const char *ptr1)
+extern void POST_IFTTT(const char *ptr,const char *ptr1)
 
 
 
