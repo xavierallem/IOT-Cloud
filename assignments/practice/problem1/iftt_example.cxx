@@ -74,7 +74,7 @@ int main(){
 	/* Write the JSON document `d` into the buffer`*/
 	d.Accept(writer);
 	/* Publish the json values and auth */
-	POST_IFTTT (buffer.GetString(),auth);
+	POST_IFTTT(buffer.GetString(),auth);
 	return 0;
 }
 
