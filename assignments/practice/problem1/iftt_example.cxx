@@ -57,24 +57,24 @@ using namespace rapidjson;
 
 int main(){
 	/* Variable to store auth key*/
-    chat auth[50];
+	chat auth[50];
 	printf("Enter TheIFTTT Auth key \n");
 	/* Take input of auth key */
 	scanf("%[^\n]%*c", auth); 
-    /*Json file to be parsed*/
-    const char* json = "{\"Temperature\":30,\"Humidity\":10}";
-    /*Initializing document variable*/
-    Document d;
-    /*Parsing the json */
-    d.Parse(json);
-    /*Initializing buffer*/
-    StringBuffer buffer;
-    /*Wrtier stream-*/
-    Writer<StringBuffer> writer(buffer);
-    /* Write the JSON document `d` into the buffer`*/
-    d.Accept(writer);
-    /* Publish the json values and auth */
-    POST_IFTTT (buffer.GetString(),auth);
+	/*Json file to be parsed*/
+	const char* json = "{\"Temperature\":30,\"Humidity\":10}";
+	/*Initializing document variable*/
+	Document d;
+	/*Parsing the json */
+	d.Parse(json);
+	/*Initializing buffer*/
+	StringBuffer buffer;
+	/*Wrtier stream-*/
+	Writer<StringBuffer> writer(buffer);
+	/* Write the JSON document `d` into the buffer`*/
+	d.Accept(writer);
+	/* Publish the json values and auth */
+	POST_IFTTT (buffer.GetString(),auth);
 	return 0;
 }
 
