@@ -3,14 +3,14 @@
 _HTTP (Hypertext Transfer Protocol)_ is a text language that allows two machines to communicate with each other. For example,
 when checking for a broswer page, the following (approximate) conversation takes place:
 
-![L](assignments/Assets/Gzip-HTTP-Request-Response.jpg)
+![L](https://github.com/xavierallem/IOT-Cloud/blob/master/assignments/Assets/Gzip-HTTP-Request-Response.jpg)
 
 
 HTTP is the term used to describe this text-based language. The goal of your server is always to understand text requests and return text responses.
 
 ## Working
 
-![l](assignments/Assets/Basic_Static_App_Server.png)
+![l](https://github.com/xavierallem/IOT-Cloud/blob/master/assignments/Assets/Basic_Static_App_Server.png)
 
 ### Client Request 
 
