@@ -1,6 +1,6 @@
 # Rest API
 
-![R](assignments/Assets/6c84d533fc229526581c779693b8a623_L.jpg)
+![R](https://github.com/xavierallem/IOT-Cloud/blob/master/assignments/Assets/6c84d533fc229526581c779693b8a623_L.jpg)
 
 
 In the simplest term, _**REST**_ considered to be a set of principles that assign how HTTP and URLs Web standards are used. 
@@ -25,7 +25,7 @@ The developer creates the API on the server and allows the client to talk to it.
 root-endpoint/?
 ```
 
-![lo](assignments/Assets/download.png)
+![lo](https://github.com/xavierallem/IOT-Cloud/blob/master/assignments/Assets/download.png)
 
 The **root-endpoint** is the starting point of the API you’re requesting from. The root-endpoint of Github’s API is https://api.github.com while the root-endpoint Twitter’s API is https://api.twitter.com. 
 The path determines the resource you’re requesting for
@@ -34,7 +34,7 @@ _To Learn more [Click here](https://www.smashingmagazine.com/2018/01/understandi
 
 ## The Method
 
-![L](assignments/Assets/what_is_rest_api.png)
+![L](https://github.com/xavierallem/IOT-Cloud/blob/master/assignments/Assets/what_is_rest_api.png)
 
 The **Method** is the type of request you send to the server. You can choose from these four types below:
 
@@ -53,7 +53,7 @@ POST /users/repos
 ```
 ## The Headers
 
-![l](assignments/Assets/requestpacket.jpg)
+![l](https://github.com/xavierallem/IOT-Cloud/blob/master/assignments/Assets/requestpacket.jpg)
 
 Headers are used to provide information to both the client and server. It can be used for many purposes, such as authentication and providing information about the body content.
 **HTTP Headers are property-value** pairs that are separated by a colon. The example below shows a header that tells the server to expect JSON content.
@@ -71,7 +71,7 @@ curl -H "Content-Type: application/json" https://api.github.com
 
 ## The Data
 
-![lo](assignments/Assets/api_diagram_2FA_Validate.png)
+![lo](https://github.com/xavierallem/IOT-Cloud/blob/master/assignments/Assets/api_diagram_2FA_Validate.png)
 
 
 The **Data** (sometimes called “body” or “message”) contains information you want to be sent to the server. This option is only used with `POST`, `PUT`, `PATCH` or `DELETE` requests.
